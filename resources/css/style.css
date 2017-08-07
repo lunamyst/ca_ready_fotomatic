@@ -26,6 +26,7 @@ html {
 
 .image-container img {
   display: block;
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -245,16 +246,32 @@ background-size: cover;
 
 #features-section {
   display: flex;
-  justify-content: space-between;
-  padding: 4rem 5%;
+  justify-content: center;
+  /*padding: 4rem 5%; */
   background-color: #f3f3f3;
 }
 
+#all-features {
+  margin-top: 4rem;
+  margin-bottom: 2.875rem; 
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
 .feature {
-  flex: 1;
+  /* flex: 1; */
   padding: 2rem;
-  margin: 0px 1.25rem;
+  /* margin: 0px 1.25rem; */
   background-color: white;
+}
+
+/* Because the only space we want is in the center between the two features */
+#feature-one {
+  margin-right: 1.1875rem;
+}
+#feature-two {
+  margin-left: 1.1875rem;
 }
 
 .feature .image-container {
@@ -263,7 +280,12 @@ background-size: cover;
   margin: 0 auto;
 }
 
+.feature .content {
+  height: 11.6875rem;
+}
+
 .feature h2 {
+  padding-top: 2.5rem;
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
@@ -275,6 +297,24 @@ background-size: cover;
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+}
+
+/* Tablet view of features section */
+@media only screen and (max-width: 1024px) {
+  #feature-one {
+    margin-right: 2.5%;
+    width: 40%;
+
+  }
+
+  #feature-two {
+    margin-left: 2.5%;
+    width: 40%;
+  }
+
+  #all-features {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 890px) {
