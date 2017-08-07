@@ -253,7 +253,7 @@ background-size: cover;
 
 #all-features {
   margin-top: 4rem;
-  margin-bottom: 2.875rem; 
+  margin-bottom: 2.875rem;
   display: flex;
   justify-content: center;
   width: 95%;
@@ -282,6 +282,7 @@ background-size: cover;
 
 .feature .content {
   height: 11.6875rem;
+  text-align: center;
 }
 
 .feature h2 {
@@ -315,7 +316,13 @@ background-size: cover;
   #all-features {
     justify-content: center;
   }
+
+  .feature .content {
+    text-align: left;
+  }
 }
+
+
 
 @media only screen and (max-width: 890px) {
   .feature h2 {
@@ -330,11 +337,40 @@ background-size: cover;
   }
 }
 
+/* Mobile view of features section */
 @media only screen and (max-width: 760px) {
-  #features-section {
+  #features-section, #all-features {
     flex-flow: column;
     padding: 0;
+    width: 100%;
   }
+
+#all-features {
+  margin-top: 0;
+}
+
+.feature .content {
+  text-align: center;
+  height: auto;
+}
+
+#feature-one {
+  margin-right: 0;
+  background-color: #f3f3f3;
+}
+
+#feature-one, #feature-two {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1.875rem;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+#feature-two {
+  margin-left: 0;
+}
 
   .feature {
     margin: 0;
