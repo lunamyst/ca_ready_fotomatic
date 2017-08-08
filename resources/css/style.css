@@ -464,16 +464,29 @@ background-size: cover;
 }
 
 /* Tablet view of quotes-section */
+@media only screen and (min-width: 761px) and (max-width: 1024px) {
+#quotes-section .content {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#quotes-section .quote {
+  padding-right: 0; 
+}
+}
 
 /* Mobile view of quotes section */
 @media only screen and (max-width: 760px) {
   #quotes-section .content {
     padding: 1.875rem .625rem;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
