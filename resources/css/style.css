@@ -463,9 +463,14 @@ background-size: cover;
   height: 1.875rem;
 }
 
+/* Tablet view of quotes-section */
+
+/* Mobile view of quotes section */
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
+    display: flex;
+    flex-direction: column; 
   }
 
   #quotes-section quote {
@@ -473,7 +478,7 @@ background-size: cover;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
