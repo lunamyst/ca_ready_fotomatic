@@ -3,6 +3,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 .main-content {
@@ -474,7 +475,7 @@ background-size: cover;
 }
 
 #quotes-section .quote {
-  padding-right: 0; 
+  padding-right: 0;
 }
 }
 
@@ -502,18 +503,24 @@ background-size: cover;
 
 footer {
   background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3.875rem;
+  display: flex;
+  align-items: center;
 }
 
 footer .content {
   color: white;
+  width: 100%; 
   display: flex;
+  justify-content: space-between;
   font-size: .75rem;
 }
 
-footer .copyright {
+/*footer .copyright {
   flex-grow: 1;
-}
+}*/
 
 @media only screen and (min-width: 760px) {
   footer .content {
